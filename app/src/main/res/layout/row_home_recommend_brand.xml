@@ -1,0 +1,377 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingBottom="15dp"
+        android:paddingTop="15dp">
+
+        <com.si.simembers.Widget.NetworkImageView
+            android:id="@+id/nivHomeRecommendBrand"
+            android:layout_width="match_parent"
+            android:src="@drawable/brand_banner_noimage"
+            android:layout_height="wrap_content" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:id="@+id/llRecommendBrandLeft"
+                android:background="?attr/selectableItemBackgroundBorderless"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <com.si.simembers.Widget.NetworkImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/product_img_noimage"
+                        android:visibility="invisible"/>
+
+                    <com.si.simembers.Widget.NetworkImageView
+                        android:id="@+id/nivRecommendBrandChildLeft"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/product_img_noimage"
+                        android:layout_gravity="center"/>
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:alpha="0.03"
+                        android:background="#000" />
+
+                    <FrameLayout
+                        android:id="@+id/flRecommendBrandChildSoldOutLeft"
+                        android:layout_width="match_parent"
+                        android:layout_height="20dp"
+                        android:visibility="gone"
+                        android:layout_gravity="bottom">
+
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="bottom"
+                            android:alpha="0.8"
+                            android:background="#c4c4c4" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:text="@string/com_item_sold_out"
+                            android:textColor="#fff"
+                            android:textSize="11dp" />
+
+                    </FrameLayout>
+
+                    <TextView
+                        android:id="@+id/tvRecommendBrandChildSaleLeft"
+                        android:layout_width="37dp"
+                        android:layout_height="15dp"
+                        android:background="#666666"
+                        android:typeface="serif"
+                        android:text="@string/recent_prod_sale"
+                        android:gravity="center"
+                        android:textSize="10dp"
+                        android:textColor="#fff"
+                        android:visibility="gone"
+                        android:textStyle="bold"
+                        android:layout_gravity="bottom|center_horizontal"/>
+
+                </FrameLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:paddingBottom="15dp"
+                    android:paddingLeft="15dp"
+                    android:paddingRight="15dp"
+                    android:paddingTop="10dp"
+                    android:background="#f7f7f7"
+                    android:gravity="center_horizontal"
+                    android:orientation="vertical">
+
+                    <com.si.simembers.Widget.EmptyTextView
+                        android:id="@+id/tvHomeRecommendBrandLeft"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:typeface="serif"
+                        android:ellipsize="end"
+                        android:gravity="center_horizontal"
+                        android:maxLines="3"
+                        android:lineSpacingExtra="-2dp"
+                        android:textColor="#212121"
+                        android:textSize="11dp" />
+
+                    <com.si.simembers.Widget.EmptyTextView
+                        android:id="@+id/tvHomeRecommendTitleLeft"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="2dp"
+                        android:ellipsize="end"
+                        android:gravity="center_horizontal"
+                        android:maxLines="3"
+                        android:textColor="#212121"
+                        android:textSize="11dp" />
+
+                    <com.si.simembers.Widget.EmptyTextView
+                        android:id="@+id/tvHomeRecommendPriceLeft"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_horizontal"
+                        android:textColor="#212121"
+                        android:textSize="11dp" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/llRecommendBrandCenter"
+                android:background="?attr/selectableItemBackgroundBorderless"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <com.si.simembers.Widget.NetworkImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/product_img_noimage"
+                        android:visibility="invisible"/>
+
+                    <com.si.simembers.Widget.NetworkImageView
+                        android:id="@+id/nivRecommendBrandChildCenter"
+                        android:layout_width="match_parent"
+                        android:src="@drawable/product_img_noimage"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"/>
+
+                    <FrameLayout
+                        android:id="@+id/flRecommendBrandChildSoldOutCenter"
+                        android:layout_width="match_parent"
+                        android:layout_height="20dp"
+                        android:visibility="gone"
+                        android:layout_gravity="bottom">
+
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="bottom"
+                            android:alpha="0.8"
+                            android:background="#c4c4c4" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:text="@string/com_item_sold_out"
+                            android:textColor="#fff"
+                            android:textSize="11dp" />
+
+                    </FrameLayout>
+
+                    <TextView
+                        android:id="@+id/tvRecommendBrandChildSaleCenter"
+                        android:layout_width="37dp"
+                        android:layout_height="15dp"
+                        android:background="#666666"
+                        android:typeface="serif"
+                        android:text="@string/recent_prod_sale"
+                        android:gravity="center"
+                        android:textSize="10dp"
+                        android:textColor="#fff"
+                        android:visibility="gone"
+                        android:textStyle="bold"
+                        android:layout_gravity="bottom|center_horizontal"/>
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:alpha="0.06"
+                        android:background="#000"
+                        android:id="@+id/imageView" />
+
+                </FrameLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:paddingBottom="15dp"
+                    android:paddingLeft="15dp"
+                    android:paddingRight="15dp"
+                    android:paddingTop="10dp"
+                    android:background="#f0f0f0"
+                    android:gravity="center_horizontal"
+                    android:orientation="vertical">
+
+                    <com.si.simembers.Widget.EmptyTextView
+                        android:id="@+id/tvHomeRecommendBrandCenter"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:typeface="serif"
+                        android:ellipsize="end"
+                        android:gravity="center_horizontal"
+                        android:maxLines="3"
+                        android:lineSpacingExtra="-2dp"
+                        android:textColor="#212121"
+                        android:textSize="11dp" />
+
+                    <com.si.simembers.Widget.EmptyTextView
+                        android:id="@+id/tvHomeRecommendTitleCenter"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="2dp"
+                        android:ellipsize="end"
+                        android:gravity="center_horizontal"
+                        android:maxLines="3"
+                        android:textColor="#212121"
+                        android:textSize="11dp" />
+
+                    <com.si.simembers.Widget.EmptyTextView
+                        android:id="@+id/tvHomeRecommendPriceCenter"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_horizontal"
+                        android:textColor="#212121"
+                        android:textSize="11dp" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/llRecommendBrandRight"
+                android:background="?attr/selectableItemBackgroundBorderless"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <com.si.simembers.Widget.NetworkImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/product_img_noimage"
+                        android:visibility="invisible"/>
+
+                    <com.si.simembers.Widget.NetworkImageView
+                        android:id="@+id/nivRecommendBrandChildRight"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/product_img_noimage"
+                        android:layout_gravity="center"/>
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:alpha="0.03"
+                        android:background="#000" />
+
+                    <FrameLayout
+                        android:id="@+id/flRecommendBrandChildSoldOutRight"
+                        android:layout_width="match_parent"
+                        android:layout_height="20dp"
+                        android:visibility="gone"
+                        android:layout_gravity="bottom">
+
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="bottom"
+                            android:alpha="0.8"
+                            android:background="#c4c4c4" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:text="@string/com_item_sold_out"
+                            android:textColor="#fff"
+                            android:textSize="11dp" />
+
+                    </FrameLayout>
+
+                    <TextView
+                        android:id="@+id/tvRecommendBrandChildSaleRight"
+                        android:layout_width="37dp"
+                        android:layout_height="15dp"
+                        android:background="#666666"
+                        android:typeface="serif"
+                        android:text="@string/recent_prod_sale"
+                        android:gravity="center"
+                        android:textSize="10dp"
+                        android:textColor="#fff"
+                        android:visibility="gone"
+                        android:textStyle="bold"
+                        android:layout_gravity="bottom|center_horizontal"/>
+
+                </FrameLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:paddingBottom="15dp"
+                    android:paddingLeft="15dp"
+                    android:paddingRight="15dp"
+                    android:paddingTop="10dp"
+                    android:background="#f7f7f7"
+                    android:gravity="center_horizontal"
+                    android:orientation="vertical">
+
+                    <com.si.simembers.Widget.EmptyTextView
+                        android:id="@+id/tvHomeRecommendBrandRight"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:typeface="serif"
+                        android:ellipsize="end"
+                        android:gravity="center_horizontal"
+                        android:maxLines="3"
+                        android:lineSpacingExtra="-2dp"
+                        android:textColor="#212121"
+                        android:textSize="11dp" />
+
+                    <com.si.simembers.Widget.EmptyTextView
+                        android:id="@+id/tvHomeRecommendTitleRight"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="2dp"
+                        android:ellipsize="end"
+                        android:gravity="center_horizontal"
+                        android:maxLines="3"
+                        android:textColor="#212121"
+                        android:textSize="11dp" />
+
+                    <com.si.simembers.Widget.EmptyTextView
+                        android:id="@+id/tvHomeRecommendPriceRight"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_horizontal"
+                        android:textColor="#212121"
+                        android:textSize="11dp" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+</layout>

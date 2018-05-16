@@ -1,0 +1,63 @@
+<layout>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/include_toolbar"
+    android:layout_width="fill_parent"
+    android:layout_height="44.0dip"
+    android:layout_gravity="bottom"
+    android:gravity="bottom"
+    android:orientation="vertical"
+    android:tag="layout/include_toolbar_0">
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="1.0dip"
+        android:background="#ffd3d3d3" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="43.0dip"
+        android:background="#ffeeeeee"
+        android:orientation="horizontal">
+
+        <ImageButton
+            android:id="@+id/btHome"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="1.0"
+            android:background="?selectableItemBackgroundBorderless"
+            android:src="@drawable/icon_common_bm_home" />
+
+        <ImageButton
+            android:id="@+id/btMypage"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="1.0"
+            android:background="?selectableItemBackgroundBorderless"
+            android:src="@drawable/icon_common_bm_mypage" />
+
+        <ImageButton
+            android:id="@+id/btSifamily"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="1.0"
+            android:background="?selectableItemBackgroundBorderless"
+            android:src="@drawable/icon_common_bm_sifamily" />
+
+        <ImageButton
+            android:id="@+id/btBookmark"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="1.0"
+            android:background="?selectableItemBackgroundBorderless"
+            android:src="@drawable/icon_common_bm_bookmark" />
+
+        <ImageButton
+            android:id="@+id/btSee"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="1.0"
+            android:background="?selectableItemBackgroundBorderless"
+            android:src="@drawable/icon_common_bm_see" />
+    </LinearLayout>
+</LinearLayout>
+</layout>

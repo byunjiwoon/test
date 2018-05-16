@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/include_home_normal_banner"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="1.0dip"
+    android:tag="layout/include_home_normal_banner_0">
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <FrameLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content">
+
+            <com.si.simembers.Widget.ResizingViewPager
+                android:id="@+id/rvpHomeNormalBanner"
+                android:layout_width="match_parent"
+                android:layout_height="210dp" />
+
+            <ImageButton
+                android:id="@+id/btHomeNormalBannerMore"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom|center|right"
+                android:layout_marginBottom="12.0dip"
+                android:layout_marginRight="12.0dip"
+                android:background="?selectableItemBackgroundBorderless"
+                android:src="@drawable/icon_main_banner_more" />
+        </FrameLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+
+
+            <TextView
+                android:id="@+id/tvHomeNormalBannerTitle"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15.0dip"
+                android:layout_marginRight="15.0dip"
+                android:layout_marginTop="11.0dip"
+                android:ellipsize="end"
+                android:gravity="center"
+                android:maxLines="1"
+                android:textColor="#ff212121"
+                android:text="tvHomeNormalBannerTitle"
+                android:textSize="21.0dip" />
+
+            <TextView
+                android:id="@+id/tvHomeNormalBannerDesc"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="12.0dip"
+                android:layout_marginLeft="15.0dip"
+                android:layout_marginRight="15.0dip"
+                android:ellipsize="end"
+                android:gravity="center"
+                android:maxLines="1"
+                android:text="tvHomeNormalBannerDesc"
+                android:textColor="#ff212121"
+                android:textSize="13.0dip" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <ImageButton
+        android:id="@+id/btHomeNormalBannerPrev"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="?selectableItemBackgroundBorderless"
+        android:src="@drawable/icon_main_arrow_left"
+        app:layout_anchor="@id/rvpHomeNormalBanner"
+        app:layout_anchorGravity="center|left" />
+
+    <ImageButton
+        android:id="@+id/btHomeNormalBannerNext"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="?selectableItemBackgroundBorderless"
+        android:src="@drawable/icon_main_arrow_right"
+        app:layout_anchor="@id/rvpHomeNormalBanner"
+        app:layout_anchorGravity="center|right" />
+
+    <TextView
+        android:id="@+id/tvHomeNormalBannerPagingCnt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/img_main_page_bg"
+        android:gravity="center"
+        android:paddingLeft="7.0dip"
+        android:paddingRight="7.0dip"
+        android:textColor="#ffffffff"
+        android:textSize="13.0dip"
+        android:text="0/0"
+        app:layout_anchor="@id/rvpHomeNormalBanner"
+        app:layout_anchorGravity="bottom|center" />
+</android.support.design.widget.CoordinatorLayout>

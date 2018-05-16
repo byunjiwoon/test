@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <android.support.design.widget.CoordinatorLayout
+        android:id="@+id/include_home_normal_banner"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:visibility="gone">
+
+        <com.si.simembers.Widget.ResizingViewPager
+            android:id="@+id/rvpHomeStaffBanner"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <ImageButton
+            android:id="@+id/btHomeStaffBannerPrev"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:src="@drawable/icon_main_arrow_left"
+            app:layout_anchor="@+id/rvpHomeStaffBanner"
+            app:layout_anchorGravity="center_vertical|left" />
+
+        <ImageButton
+            android:id="@+id/btHomeStaffBannerNext"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:src="@drawable/icon_main_arrow_right"
+            app:layout_anchor="@+id/rvpHomeStaffBanner"
+            app:layout_anchorGravity="center_vertical|right" />
+
+    </android.support.design.widget.CoordinatorLayout>
+</layout>

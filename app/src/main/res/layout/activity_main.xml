@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <android.support.v4.widget.DrawerLayout
+    android:id="@+id/dlMain"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true">
+
+    <android.support.design.widget.CoordinatorLayout
+        android:id="@+id/clMain"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fitsSystemWindows="true"
+        >
+
+        <android.support.design.widget.AppBarLayout
+            android:id="@+id/ablGnbArea"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:elevation="0.0dip">
+
+            <include
+                android:id="@+id/include_gnb"
+                layout="@layout/include_gnb" />
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="40dp">
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/rvTopTab"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:background="#ff222222"/>
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="fill_parent"
+                        android:layout_gravity="left"
+                        android:src="@drawable/icon_common_gnb_lmask" />
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="fill_parent"
+                        android:layout_gravity="right"
+                        android:src="@drawable/icon_common_gnb_rmask" />
+
+            </FrameLayout>
+        </android.support.design.widget.AppBarLayout>
+
+
+
+       <android.support.v4.widget.SwipeRefreshLayout
+            android:id="@+id/srlRefresh"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#ffffffff"
+            app:layout_behavior="@string/appbar_scrolling_view_behavior"
+            >
+            <android.support.v4.view.ViewPager
+                android:id="@+id/pagerMain"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:paddingBottom="43.0dip"
+                android:visibility="visible">
+
+            </android.support.v4.view.ViewPager>
+
+        </android.support.v4.widget.SwipeRefreshLayout>
+
+        <ImageButton
+            android:id="@+id/btnScrollToTop"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="58.0dip"
+            android:layout_marginRight="15.0dip"
+            android:background="?selectableItemBackgroundBorderless"
+            android:src="@drawable/icon_common_top"
+            android:visibility="visible"
+            app:layout_anchor="@id/pagerMain"
+            app:layout_anchorGravity="end|bottom|center" />
+
+        <include
+            android:id="@id/include_toolbar"
+            layout="@layout/include_toolbar" />
+
+
+
+    </android.support.design.widget.CoordinatorLayout>
+        <include
+            android:id="@+id/include_slide_menu"
+            layout="@layout/include_slide_menu">
+        </include>
+
+
+</android.support.v4.widget.DrawerLayout>
+</layout>

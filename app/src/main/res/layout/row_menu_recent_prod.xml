@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <FrameLayout
+        android:id="@+id/row_recent_prod"
+        android:layout_width="55dp"
+        android:layout_height="55dp"
+        android:layout_marginLeft="7.5dp"
+        android:layout_marginRight="7.5dp"
+        android:orientation="vertical">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@drawable/sifamily_logo_noimage"
+            android:visibility="invisible"/>
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/civRecentProd"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:src="@drawable/sifamily_logo_noimage"
+            android:background="?attr/selectableItemBackgroundBorderless" />
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/civRecentProdDim"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:alpha="0.1"
+            android:src="#000" />
+
+        <FrameLayout
+            android:id="@+id/flRecentProdSoldout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="?attr/selectableItemBackgroundBorderless">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:alpha="0.5"
+                android:src="#000" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="@string/com_item_sold_out"
+                android:textColor="#fff"
+                android:textSize="13dp" />
+
+        </FrameLayout>
+
+    </FrameLayout>
+</layout>

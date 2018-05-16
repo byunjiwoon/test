@@ -1,0 +1,196 @@
+
+<resources>
+<string name="facebook_app_id">615747055258003</string>
+<string name="igaworks_app_key">363708308</string>
+<string name="igaworks_hash_key">1bcdfa570bd14c55</string>
+<string name="wisetracker_key">twIAAB+LCAAAAAAAAACF0t1OgzAUB/B7n2LpA0C7jzgMYxdqonFbjC4zemM6OEAzaMnpYW5vb1ESmWZ41+b8Tvs/TcP5oSwGe0CrjJ4x4XE2jy5CBGtqjMG6tSVUOhtoWcKMEe7ujCUW5UTVle+7vfehLBDKeAfoxcbbYeh/9/xullX1AEcWrV5e+dt6U55zubT5FxxCKlLg8buYcDG+FME4GAXBuTYVl9X6WAGL7q8fOR91nNIEGWAL49quDIsmUxH6beWPcVmfAfcqhoYKzqfDflwYauT4vEKgGvVGWUU3klxM0YtTQAS8PVQK4X9PqgR0M3XF1piiLSewrbOlzViUysJC6De1U1JbeAICTe4nsIiw/lGnVyWS5DPoZGkSF6rnWUp5cMHlQqWwdvGc7Rmgxc3BC9AZ5Y7zLvc7n/ITLGSyebcCAAA=</string>
+
+<string name="app_name">S.I.Village</string>
+
+<string name="price_token">%1$s원</string>
+
+<string name="com_list_more">더보기</string>
+<string name="com_list_close">닫기</string>
+
+<string name="com_item_sold_out">품절</string>
+
+<string name="now_no_item_text">실시간 인기 아이템이 없습니다.</string>
+<string name="pick_no_item_text">현재 등록된 상품이 없습니다.</string>
+
+<string name="menu_tab_category">CATEGORY</string>
+<string name="menu_tab_brand">BRAND</string>
+<string name="menu_footer_recent_product">최근본상품</string>
+<string name="menu_footer_recent_no_data">최근 본 상품이 없습니다.</string>
+<string name="menu_footer_cscenter">고객센터</string>
+<string name="menu_footer_logout">로그아웃</string>
+<string name="menu_footer_login">로그인</string>
+<string name="menu_footer_store">매장안내</string>
+<string name="menu_footer_setting">설정</string>
+<string name="menu_header_brand_tabs_fashion">패션</string>
+<string name="menu_header_brand_tabs_beauty">뷰티</string>
+<string name="menu_header_brand_tabs_living">리빙</string>
+<string name="menu_header_brand_fav">즐겨찾는 브랜드를 설정해 주세요</string>
+
+<string name="main_event_activity_title">이벤트 전체보기</string>
+
+<string name="tabs_home_category_women_fashion">여성패션</string>
+<string name="tabs_home_category_man_fashion">남성패션</string>
+<string name="tabs_home_category_others">잡화</string>
+<string name="tabs_home_category_kids">아동</string>
+<string name="tabs_home_category_beauty">뷰티</string>
+<string name="tabs_home_category_living">리빙</string>
+<string name="tabs_home_bestselling_title">BEST SELLING</string>
+<string name="tabs_home_recommend_brand_title">HOT BRAND</string>
+<string name="tabs_home_my_brand_title">%1$s님의 </string>
+<string name="tabs_home_my_brand_title_serif">MY BRAND</string>
+
+<string name="tabs_event_sivillager_title">S.I.VILLAGER</string>
+<string name="tabs_event_sivillager_sub_title">특별한 혜택</string>
+<string name="tabs_event_sivillager_winner">당첨자 발표</string>
+
+<string name="tabs_plan_tab_all">전체</string>
+<string name="tabs_plan_tab_fashion">패션</string>
+<string name="tabs_plan_tab_beauty">뷰티</string>
+<string name="tabs_plan_tab_living">리빙</string>
+<string name="tabs_plan_tab_sort_category">카테고리</string>
+<string name="tabs_plan_tab_sort_brand">브랜드</string>
+<string name="tabs_plan_cat_sort_all">ALL</string>
+<string name="tabs_plan_cat_sort_women">여성패션</string>
+<string name="tabs_plan_cat_sort_man">남성패션</string>
+<string name="tabs_plan_cat_sort_kid">유아</string>
+<string name="tabs_plan_cat_sort_other">잡화</string>
+
+<string name="tabs_outlet_title">아울렛</string>
+<string name="tabs_outlet_category_all">전체</string>
+<string name="tabs_outlet_category_women_fashion">여성패션</string>
+<string name="tabs_outlet_category_man_fashion">남성패션</string>
+<string name="tabs_outlet_category_others">잡화</string>
+<string name="tabs_outlet_category_kids">아동</string>
+<string name="tabs_outlet_category_sort">아울렛 카테고리</string>
+<string name="tabs_outlet_bestselling_title">BEST SELLING</string>
+<string name="tabs_outlet_hot_item_title">HOT ITEM</string>
+
+<string name="outlet_category_backpress">BACK</string>
+
+<string name="tabs_magazine_title">매거진</string>
+<string name="tabs_magazine_jaju_here">자주엔</string>
+<string name="tabs_magazine_sub_title">트렌드를 스크랩하는 매거진, 더 스크랫</string>
+
+<string name="tabs_pick_category_women_fashion">여성패션</string>
+<string name="tabs_pick_category_man_fashion">남성패션</string>
+<string name="tabs_pick_category_others">잡화</string>
+<string name="tabs_pick_category_kids">아동</string>
+<string name="tabs_pick_category_beauty">뷰티</string>
+<string name="tabs_pick_category_living">리빙</string>
+<string name="tabs_pick_title">EDITOR\'s CHOICE</string>
+<string name="tabs_pick_list_divide_title">Editor\'s talk</string>
+<string name="tabs_pick_list_divide_sub_title">S.I.VILLAGE가 추천하는 SPECIAL ITEM</string>
+<string name="tabs_pick_item_event_sale">SALE</string>
+<string name="tabs_pick_item_event_gift">GIFT</string>
+<string name="tabs_pick_item_event_set">SET</string>
+
+<string name="tabs_now_sort_age_title">연령대</string>
+<string name="tabs_now_sort_category_title">카테고리</string>
+<string name="tabs_now_sort_category_all">카테고리 전체</string>
+<string name="tabs_now_sort_age_all">연령대 전체</string>
+<string name="staff_price_namespace">임직원가</string>
+
+<string name="sifamily_title">S.I.FAMILY</string>
+
+<string name="recent_product_title">최근 본 상품</string>
+<string name="recent_product_no_data">최근 본 상품이 없습니다.</string>
+
+<string name="category_sort_list_title">%1$s 전체</string>
+<string name="magazine_sort_list_title">The Scrat Main</string>
+<string name="magazine_sort_list_title_02">THE SCRAT CATEGORY</string>
+
+<string name="check_sort_pop_clear">초기화</string>
+<string name="check_sort_pop_enter">적용</string>
+
+<string name="recent_prod_sale">SALE</string>
+
+<!-- 얼럿 -->
+<string name="btn_positive">확인</string>
+<string name="btn_negative">취소</string>
+<string name="msg_system_err">(%s) 시스템 오류 입니다.</string>
+<string name="msg_rooting">루팅된 휴대폰에서는 이용하실 수 없습니다.</string>
+<string name="msg_available">유효하지 않은 앱입니다.</string>
+<string name="finger_event">두손가락을 이용해 아래로 당겨주세요.</string>
+<string name="need_user_login">로그인 후 이용이 가능합니다.\n로그인 화면으로 이동하시겠습니까?</string>
+<string name="network_error">네트워크 연결이 원활하지 않습니다.\n잠시 후에 다시 시도해주세요.</string>
+<string name="msg_app_finish">종료하시겠습니까?</string>
+
+<string name="app_force_update">알림\n
+\n새 버전이 업데이트 되었습니다.
+\n업데이트 후 사용하실 수 있습니다.
+\n확인을 누르면 플레이스토어로 이동합니다.</string>
+<string name="app_force_update_confirm">확인</string>
+
+<string name="app_recomment_update">알림\n
+\n새 버전이 업데이트 되었습니다.
+\n업데이트를 누르면 플레이스토어로 이동합니다.</string>
+<string name="app_recommend_update_confirm">업데이트</string>
+<string name="app_recommend_update_reject">나중에</string>
+
+<string name="video_loading">영상을 로딩중입니다.</string>
+
+<string name="img_root">http://img.sivillage.com/files</string>
+<string name="api_root">http://m.sivillage.com</string>
+<!--<string name="api_root">http://stmo.sivillage.com</string>-->
+<!--<string name="api_root">http://devmo.sivillage.com</string>-->
+<string name="api_web_home">/fashion/hallFA</string>
+<string name="api_app">/app</string>
+<string name="api_main_tabs">/mainTabs.json?</string>
+<string name="api_main_event_tab">/mainEventTab.json?</string>
+<string name="api_main_plan_tab">/mainPlanTab.json?</string>
+<string name="api_slide_menu">/slideMenu.json?</string>
+<string name="api_update_my_brand">/updateMyBrand.json?</string>
+<string name="api_s_i_family_list">/sifamilyList.json?</string>
+<string name="api_main_now_tab">/mainNowTab.json?</string>
+<string name="api_main_home_tab">/mainHomeTab.json?</string>
+<string name="api_home_brand_more">/moreBrndInfo.json?</string>
+<string name="api_main_outlet_tab">/mainOutletTab.json?</string>
+<string name="api_main_outlet_more_tab">/mainOutletMoreTab.json?</string>
+<string name="api_outlet_brand_more">b</string>
+<string name="api_outlet_4banner_more">s</string>
+<string name="api_main_magazine_tab">/mainMagazineTab.json?</string>
+<string name="api_main_pick_tab">/mainMdpickTab.json?</string>
+<string name="api_splash">/appIntroImg.json</string>
+<string name="api_user_info">/userInfo.json?</string>
+<string name="api_recent_prod">/recentProductInfo.json?</string>
+<string name="api_event_winner">/eventplan/prizeWinnerTotalList</string>
+<string name="api_basket_count">/cartCount.json?</string>
+<string name="api_my_page">/mypage/main</string>
+<string name="api_delivery_login">/login/nonLogin</string>
+<string name="api_delivery">/mypage/orderList</string>
+<string name="api_bookmark">/mypage/getProductWishList</string>
+<string name="api_shopping_basket">/cart/cartList</string>
+<string name="api_gnb_search">/totalSearchLayer.do</string>
+<string name="api_gnb_search_detail">/totalSearch.do</string>
+<string name="api_siv_store">/customer/storeList </string>
+<string name="api_customer_center">/customer/main</string>
+<string name="api_setting">/member/setting</string>
+<string name="api_user_login">/login/login</string>
+<string name="api_user_login_">/login/login</string>
+<string name="api_user_login_no_port">/login/login</string>
+<string name="api_user_login_no_port_">/login/login</string>
+<string name="api_user_logout_ajax">/login/logout/ajax</string>
+<string name="api_user_logout">/app/logout/ajax.json</string>
+<string name="api_user_logout_setting">login/logout</string>
+<string name="api_main_popup">/appMainPopUp.json</string>
+<string name="api_main_footer">/html/view/com/M_COM-footer.html</string>
+<string name="api_magazine_jaju_n">/living/contents/magazineMain</string>
+<string name="api_home_cate_women">/fashion/display/displayCategoryFA?dspCatNo=010000029407</string>
+<string name="api_home_cate_man">/fashion/display/displayCategoryFA?dspCatNo=010000029506</string>
+<string name="api_home_cate_others">/fashion/display/displayCategoryFA?dspCatNo=010000029585</string>
+<string name="api_home_cate_kids">/fashion/display/displayCategoryFA?dspCatNo=010000029674</string>
+<string name="api_home_cate_beauty">/beauty/display/displayCategoryBE?dspCatNo=010000002001</string>
+<string name="api_home_cate_living">/living/display/displayShop</string>
+<string name="api_footer_about">/customer/aboutSIVillage</string>
+<string name="api_footer_introduce">http://www.sikorea.co.kr/main</string>
+<string name="api_footer_notice">/customer/noticeList?</string>
+<string name="api_footer_store_info">/customer/storeList</string>
+<string name="api_footer_pc_web">http://fashion.sivillage.com/hallFA</string>
+<string name="api_footer_user_terms">/customer/useTerms</string>
+<string name="api_footer_private_terms">/customer/privateInfoTerms</string>
+</resources>

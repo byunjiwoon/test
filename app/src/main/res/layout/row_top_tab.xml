@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/llTopTab"
+    android:layout_width="wrap_content"
+    android:layout_height="fill_parent"
+    android:layout_marginLeft="@dimen/top_tab_margin"
+    android:layout_marginRight="@dimen/top_tab_margin"
+    android:orientation="vertical"
+    android:tag="layout/row_top_tab_0">
+
+    <TextView
+        android:id="@+id/tvTopTab"
+        android:layout_width="wrap_content"
+        android:layout_height="fill_parent"
+        android:layout_gravity="center"
+        android:layout_marginLeft="10.0dip"
+        android:layout_marginRight="10.0dip"
+        android:layout_weight="1.0"
+        android:gravity="center"
+        android:text="dda"
+        android:textColor="#ffffffff"
+        android:textSize="14.0dip"
+        android:textStyle="bold" />
+
+    <View
+        android:id="@+id/vTopTabIndicator"
+        android:layout_width="fill_parent"
+        android:layout_height="3.0dip"
+        android:layout_gravity="bottom"
+        android:background="#ffd10011"
+        android:visibility="invisible" />
+</LinearLayout>

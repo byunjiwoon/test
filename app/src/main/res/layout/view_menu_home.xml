@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <LinearLayout
+        android:id="@+id/view_menu_home"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical"
+       >
+
+        <com.si.simembers.Widget.VerticalOnlyNestedScrollView
+            android:id="@+id/scMain"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            app:layout_behavior="android.support.design.widget.AppBarLayout$ScrollingViewBehavior">
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:orientation="vertical"
+              >
+                <include android:id="@id/include_home_normal_banner" layout="@layout/include_home_normal_banner" />
+
+                <include
+                    android:id="@+id/include_home_category"
+                    layout="@layout/include_home_category" />
+
+                <include
+                    android:id="@+id/include_home_staff_banner"
+                    layout="@layout/include_home_staff_banner" />
+
+                <include
+                    android:id="@+id/include_home_bestselling"
+                    layout="@layout/include_home_bestselling" />
+
+                <include
+                    android:id="@+id/include_home_my_brand"
+                    layout="@layout/include_home_my_brand" />
+
+               <include
+                    android:id="@+id/include_home_recommend_brand"
+                    layout="@layout/include_home_recommend_brand" />
+
+                <include layout="@layout/footer_main_tab"
+                    android:id="@+id/footer_main_tab"/>
+
+            </LinearLayout>
+        </com.si.simembers.Widget.VerticalOnlyNestedScrollView>
+    </LinearLayout>
+
+
+</layout>

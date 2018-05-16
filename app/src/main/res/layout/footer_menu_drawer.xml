@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <LinearLayout
+        android:id="@+id/footer_menu_drawer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="bottom"
+        android:layout_gravity="bottom"
+        android:orientation="vertical">
+
+        <com.si.simembers.Widget.EmptyTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="25dip"
+            android:text="@string/menu_footer_recent_product"
+            android:textSize="18dp"
+            android:textColor="#212121"
+            android:textStyle="bold"/>
+
+        <com.si.simembers.Widget.EmptyTextView
+            android:id="@+id/txtRecentProdNoData"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/menu_footer_recent_no_data"
+            android:textSize="11dp"
+            android:layout_gravity="center"
+            android:textColor="#212121"
+            android:visibility="visible"
+            android:layout_marginTop="37dp"
+            android:layout_marginBottom="52dp"/>
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/rvMenuRecentProduct"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:layout_marginTop="13dp"
+            android:paddingLeft="7.5dp"
+            android:paddingRight="7.5dp"
+            android:orientation="horizontal"
+            android:visibility="gone"
+            android:layout_marginBottom="30dp"></android.support.v7.widget.RecyclerView>
+
+
+        <View
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"/>
+
+        <include
+            android:id="@+id/footer"
+            layout="@layout/include_menu_drawer_footer" />
+
+    </LinearLayout>
+
+</layout>

@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <LinearLayout
+        android:id="@+id/include_menu_drawer_footer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:visibility="visible"
+        android:orientation="vertical">
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dip"
+            android:background="#f0f0f0" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="58dip"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/btnFooterCsCenter"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="?attr/selectableItemBackgroundBorderless"
+                android:drawableTop="@drawable/icon_common_lm_cscenter"
+                android:gravity="center"
+                android:paddingTop="13dp"
+                android:text="@string/menu_footer_cscenter"
+                android:paddingBottom="1dp"
+                android:textColor="#212121"
+                android:textSize="11dp" />
+
+            <View
+                android:layout_width="1dip"
+                android:layout_height="match_parent"
+                android:background="#f0f0f0" />
+
+            <Button
+                android:id="@+id/btnFooterLogInOut"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="?attr/selectableItemBackgroundBorderless"
+                android:drawableTop="@drawable/icon_common_lm_login"
+                android:gravity="center"
+                android:paddingTop="13dp"
+                android:text="@string/menu_footer_logout"
+                android:paddingBottom="1dp"
+                android:textColor="#212121"
+                android:textSize="11dp" />
+
+            <View
+                android:layout_width="1dip"
+                android:layout_height="match_parent"
+                android:background="#f0f0f0" />
+
+            <Button
+                android:id="@+id/btnFooterStore"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="?attr/selectableItemBackgroundBorderless"
+                android:drawableTop="@drawable/icon_common_lm_store"
+                android:gravity="center"
+                android:paddingTop="13dp"
+                android:text="@string/menu_footer_store"
+                android:paddingBottom="1dp"
+                android:textColor="#212121"
+                android:textSize="11dp" />
+
+            <View
+                android:layout_width="1dip"
+                android:layout_height="match_parent"
+                android:background="#f0f0f0" />
+
+            <Button
+                android:id="@+id/btnFooterSetting"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="?attr/selectableItemBackgroundBorderless"
+                android:drawableTop="@drawable/icon_common_lm_setting"
+                android:gravity="center"
+                android:paddingTop="13dp"
+                android:text="@string/menu_footer_setting"
+                android:paddingBottom="1dp"
+                android:textColor="#212121"
+                android:textSize="11dp" />
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dip"
+            android:background="#f0f0f0" />
+
+    </LinearLayout>
+
+</layout>

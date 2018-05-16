@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <LinearLayout
+        android:id="@+id/include_home_category"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#e5e5e5" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="79dp"
+            android:background="#f7f7f7"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:paddingLeft="12dp"
+            android:paddingRight="12dp">
+
+            <Button
+                android:id="@+id/btHomeCategoryWomenFashion"
+                android:layout_width="40dp"
+                android:layout_height="wrap_content"
+                android:background="?attr/selectableItemBackgroundBorderless"
+                android:drawableTop="@drawable/icon_main_menu_wfashion"
+                android:drawablePadding="5dp"
+                android:layout_weight="1"
+                android:includeFontPadding="false"
+                android:textSize="12dp"
+                android:textColor="#212121"
+                android:text="@string/tabs_home_category_women_fashion" />
+
+            <Button
+                android:id="@+id/btHomeCategoryManFashion"
+                android:layout_width="40dp"
+                android:layout_height="wrap_content"
+                android:background="?attr/selectableItemBackgroundBorderless"
+                android:drawablePadding="5dp"
+                android:layout_weight="1"
+                android:drawableTop="@drawable/icon_main_menu_mfashion"
+                android:textSize="12dp"
+                android:textColor="#212121"
+                android:text="@string/tabs_home_category_man_fashion" />
+
+            <Button
+                android:id="@+id/btHomeCategoryOthers"
+                android:layout_width="40dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="?attr/selectableItemBackgroundBorderless"
+                android:drawablePadding="5dp"
+                android:drawableTop="@drawable/icon_main_menu_acc"
+                android:textSize="12dp"
+                android:textColor="#212121"
+                android:text="@string/tabs_home_category_others" />
+
+            <Button
+                android:id="@+id/btHomeCategoryKids"
+                android:layout_width="40dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="?attr/selectableItemBackgroundBorderless"
+                android:drawablePadding="5dp"
+                android:drawableTop="@drawable/icon_main_menu_child"
+                android:textSize="12dp"
+                android:textColor="#212121"
+                android:text="@string/tabs_home_category_kids" />
+
+            <Button
+                android:id="@+id/btHomeCategoryBeauty"
+                android:layout_width="40dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="?attr/selectableItemBackgroundBorderless"
+                android:drawablePadding="5dp"
+                android:drawableTop="@drawable/icon_main_menu_beauty"
+                android:textSize="12dp"
+                android:textColor="#212121"
+                android:text="@string/tabs_home_category_beauty" />
+
+            <Button
+                android:id="@+id/btHomeCategoryLiving"
+                android:layout_width="40dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="?attr/selectableItemBackgroundBorderless"
+                android:drawablePadding="5dp"
+                android:drawableTop="@drawable/icon_main_menu_living"
+                android:textSize="12dp"
+                android:textColor="#212121"
+                android:text="@string/tabs_home_category_living" />
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#e5e5e5" />
+
+    </LinearLayout>
+
+</layout>

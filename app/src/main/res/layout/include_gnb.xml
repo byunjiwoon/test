@@ -1,0 +1,113 @@
+<layout>
+    <android.support.v7.widget.Toolbar xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/toolBar"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/app_toolbar_height"
+        android:layout_marginLeft="-15dip"
+        android:background="#fff"
+        android:theme="@null"
+        android:elevation="0dp"
+        app:layout_scrollFlags="scroll|enterAlways|snap">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="60dip"
+            android:background="#fff"
+            android:orientation="vertical">
+
+            <ImageButton
+                android:id="@+id/btnGnbMenu"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10dip"
+                android:background="?attr/selectableItemBackgroundBorderless"
+                android:src="@drawable/icon_common_gnb_category" />
+
+            <ImageButton
+                android:id="@+id/btnGnbBack"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="5dip"
+                android:layout_toRightOf="@+id/btnGnbMenu"
+                android:background="?attr/selectableItemBackgroundBorderless"
+                android:src="@drawable/icon_common_gnb_back"
+                android:visibility="invisible" />
+
+            <ImageView
+                android:id="@+id/ivGnbLogo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:visibility="gone"
+                android:src="@drawable/img_common_gnb_sivlogo" />
+
+            <!--<ImageView-->
+            <!--android:id="@+id/nivGnbTitle"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_centerInParent="true"-->
+            <!--android:visibility="gone" />-->
+
+            <ImageView
+                android:id="@+id/nivGnbTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:visibility="gone" />
+
+            <com.si.simembers.Widget.EmptyTextView
+                android:id="@+id/tvGnbTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:textColor="#212121"
+                android:textSize="19dp"
+                android:textStyle="bold"
+                android:visibility="gone" />
+
+            <ImageButton
+                android:id="@+id/btnGnbSearch"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="5dip"
+                android:layout_toLeftOf="@+id/rlGnbFav"
+                android:background="?attr/selectableItemBackgroundBorderless"
+                android:src="@drawable/icon_common_gnb_search" />
+
+            <RelativeLayout
+                android:id="@+id/rlGnbFav"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="10dip">
+
+                <ImageButton
+                    android:id="@+id/btnGnbFav"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="?attr/selectableItemBackgroundBorderless"
+                    android:src="@drawable/icon_common_gnb_bag" />
+
+                <com.si.simembers.Widget.EmptyTextView
+                    android:id="@+id/tvGnbFavBadge"
+                    android:layout_width="16dp"
+                    android:layout_height="16dp"
+                    android:layout_alignRight="@+id/btnGnbFav"
+                    android:background="@drawable/gnb_fav_badge"
+                    android:gravity="center"
+                    android:maxLength="2"
+                    android:textColor="#fff"
+                    android:visibility="invisible"
+                    android:textSize="10dp" />
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+    </android.support.v7.widget.Toolbar>
+</layout>

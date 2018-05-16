@@ -1,0 +1,306 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#fff"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/llHeaderMenuDrawer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#000"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="60dip"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <ImageButton
+                    android:id="@+id/btnMenuHome"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dip"
+                    android:background="?attr/selectableItemBackgroundBorderless"
+                    android:src="@drawable/icon_common_w_home" />
+
+                <View
+                    android:layout_width="1dip"
+                    android:layout_height="20dip"
+                    android:layout_marginLeft="10dip"
+                    android:background="#222" />
+
+                <ImageButton
+                    android:id="@+id/btnMenuMyPage"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dip"
+                    android:background="?attr/selectableItemBackgroundBorderless"
+                    android:src="@drawable/icon_common_w_mypage" />
+
+                <View
+                    android:layout_width="1dip"
+                    android:layout_height="20dip"
+                    android:layout_marginLeft="10dip"
+                    android:background="#222" />
+
+                <LinearLayout
+                    android:id="@+id/llMenuDrawerHeaderDelivery"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <ImageButton
+                        android:id="@+id/btnMenuDelivery"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="15dip"
+                        android:background="?attr/selectableItemBackgroundBorderless"
+                        android:src="@drawable/icon_common_w_delivery" />
+
+                    <View
+                        android:layout_width="1dip"
+                        android:layout_height="20dip"
+                        android:layout_marginLeft="10dip"
+                        android:background="#222" />
+                </LinearLayout>
+
+                <ImageButton
+                    android:id="@+id/btnMenuBookmark"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dip"
+                    android:background="?attr/selectableItemBackgroundBorderless"
+                    android:src="@drawable/icon_common_w_bookmark" />
+
+                <View
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1" />
+
+                <ImageButton
+                    android:id="@+id/btnMenuClose"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="15dip"
+                    android:background="?attr/selectableItemBackgroundBorderless"
+                    android:src="@drawable/icon_common_w_close" />
+
+            </LinearLayout>
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="70dip"
+                android:layout_marginBottom="15dip"
+                android:layout_marginLeft="15dip"
+                android:layout_marginRight="15dip"
+                android:background="@drawable/solid_layer_gray">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_weight="0.47"
+                        android:orientation="vertical">
+
+                        <Button
+                            android:id="@+id/btnMenuMiddle01"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:background="?attr/selectableItemBackgroundBorderless"
+                            android:drawableRight="@drawable/icon_common_arrow_right2"
+                            android:gravity="center_vertical"
+                            android:maxLines="1"
+                            android:paddingLeft="15dip"
+                            android:paddingRight="10dip"
+                            android:textColor="#fff"
+                            android:textSize="13dp"
+                            android:textStyle="bold" />
+
+                        <Button
+                            android:id="@+id/btnMenuMiddle04"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:background="?attr/selectableItemBackgroundBorderless"
+                            android:drawableRight="@drawable/icon_common_arrow_right2"
+                            android:gravity="center_vertical"
+                            android:maxLines="1"
+                            android:paddingLeft="15dip"
+                            android:paddingRight="10dip"
+                            android:textColor="#fff"
+                            android:textSize="13dp"
+                            android:textStyle="bold" />
+
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="1dip"
+                        android:layout_height="match_parent"
+                        android:background="#222222" />
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_weight="0.27"
+                        android:orientation="vertical">
+
+                        <Button
+                            android:id="@+id/btnMenuMiddle02"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:background="?attr/selectableItemBackgroundBorderless"
+                            android:drawableRight="@drawable/icon_common_arrow_right2"
+                            android:gravity="center_vertical"
+                            android:maxLines="1"
+                            android:paddingLeft="15dip"
+                            android:paddingRight="10dip"
+                            android:textColor="#fff"
+                            android:textSize="13dp"
+                            android:textStyle="bold" />
+
+                        <Button
+                            android:id="@+id/btnMenuMiddle05"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:background="?attr/selectableItemBackgroundBorderless"
+                            android:drawableRight="@drawable/icon_common_arrow_right2"
+                            android:gravity="center_vertical"
+                            android:maxLines="1"
+                            android:paddingLeft="15dip"
+                            android:paddingRight="10dip"
+                            android:textColor="#fff"
+                            android:textSize="13dp"
+                            android:textStyle="bold" />
+
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="1dip"
+                        android:layout_height="match_parent"
+                        android:background="#222222" />
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_weight="0.27"
+                        android:orientation="vertical">
+
+                        <Button
+                            android:id="@+id/btnMenuMiddle03"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:background="?attr/selectableItemBackgroundBorderless"
+                            android:drawableRight="@drawable/icon_common_arrow_right2"
+                            android:gravity="center_vertical"
+                            android:maxLines="1"
+                            android:paddingLeft="15dip"
+                            android:paddingRight="10dip"
+                            android:textColor="#fff"
+                            android:textSize="13dp"
+                            android:textStyle="bold" />
+
+                        <Button
+                            android:id="@+id/btnMenuMiddle06"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:background="?attr/selectableItemBackgroundBorderless"
+                            android:drawableRight="@drawable/icon_common_arrow_right2"
+                            android:gravity="center_vertical"
+                            android:maxLines="1"
+                            android:paddingLeft="15dip"
+                            android:paddingRight="10dip"
+                            android:textColor="#fff"
+                            android:textSize="13dp"
+                            android:textStyle="bold" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_gravity="center_vertical"
+                    android:background="#222"/>
+
+            </FrameLayout>
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dip">
+
+                <android.support.design.widget.TabLayout
+                    android:id="@+id/tabMenuCategory"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:background="#222"
+                    app:tabGravity="fill"
+                    app:tabIndicatorColor="#d10011"
+                    app:tabIndicatorHeight="3dip"
+                    app:tabMaxWidth="0dp"
+                    app:tabMode="fixed"
+                    app:tabSelectedTextColor="#fff"
+                    app:tabTextAppearance="@style/TabLayout.Text"
+                    app:tabTextColor="#666"></android.support.design.widget.TabLayout>
+
+                <View
+                    android:layout_width="1dip"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:background="#333" />
+
+            </FrameLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/llBrandDetail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dip"
+            android:layout_marginRight="15dip"
+            android:orientation="vertical"
+            android:visibility="gone">
+
+            <android.support.design.widget.TabLayout
+                android:id="@+id/tabBrandDetail"
+                android:layout_width="match_parent"
+                android:layout_height="47dp"
+                android:layout_marginTop="10dp"
+                android:visibility="visible"
+                app:tabGravity="fill"
+                app:tabIndicatorColor="#222222"
+                app:tabIndicatorHeight="3dip"
+                app:tabMode="fixed"
+                app:tabSelectedTextColor="#212121"
+                app:tabTextAppearance="@style/TabLayout.Text"
+                app:tabTextColor="#212121"></android.support.design.widget.TabLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dip"
+                android:background="#222222"></View>
+
+            <!--<include
+                android:id="@+id/menuBrandDummy"
+                layout="@layout/row_menu_drawer_brand" />-->
+        </LinearLayout>
+
+    </LinearLayout>
+</layout>

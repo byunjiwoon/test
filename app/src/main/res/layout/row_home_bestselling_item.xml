@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <LinearLayout
+        android:id="@+id/row_home_bestselling_item"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="15dp"
+        android:orientation="vertical">
+
+        <View
+            android:id="@+id/vDivide"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:visibility="gone"
+            android:background="#e5e5e5" />
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <FrameLayout
+                    android:layout_width="135dp"
+                    android:layout_height="135dp">
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:visibility="invisible"
+                        android:src="@drawable/product_img_noimage"/>
+
+                    <ImageView
+                        android:id="@+id/ivHomeBestsellingItem"
+                        android:layout_width="135dp"
+                        android:layout_height="135dp"
+                        android:src="@drawable/product_img_noimage"
+                        android:layout_gravity="center"/>
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:alpha="0.03"
+                        android:background="#000" />
+
+                    <TextView
+                        android:id="@+id/tvHomeBestsellingRank"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="4dp"
+                        android:typeface="serif"
+                        android:textColor="#212121"
+                        android:textSize="20dp" />
+
+                    <FrameLayout
+                        android:id="@+id/flHomeBestSellingSoldOut"
+                        android:layout_width="match_parent"
+                        android:layout_height="30dp"
+                        android:visibility="gone"
+                        android:layout_gravity="bottom">
+
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="bottom"
+                            android:alpha="0.8"
+                            android:background="#c4c4c4" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:text="@string/com_item_sold_out"
+                            android:textColor="#fff"
+                            android:textSize="13dp" />
+
+                    </FrameLayout>
+
+                    <TextView
+                        android:id="@+id/tvHomeBestSellingSale"
+                        android:layout_width="45dp"
+                        android:layout_height="18dp"
+                        android:background="#666666"
+                        android:typeface="serif"
+                        android:text="@string/recent_prod_sale"
+                        android:gravity="center"
+                        android:textSize="12dp"
+                        android:textStyle="bold"
+                        android:textColor="#fff"
+                        android:visibility="gone"
+                        android:layout_gravity="bottom|center_horizontal"
+                        android:layout_marginBottom="8dp"/>
+
+                </FrameLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="left"
+                    android:layout_marginLeft="15dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/tvHomeBestsellingBrand"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="15dp"
+                        android:ellipsize="end"
+                        android:maxLines="2"
+                        android:textColor="#212121"
+                        android:typeface="serif"
+                        android:textSize="13dp" />
+
+                    <TextView
+                        android:id="@+id/tvHomeBestsellingTitle"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="7dp"
+                        android:ellipsize="end"
+                        android:maxLines="2"
+                        android:textColor="#212121"
+                        android:textSize="13dp" />
+
+                    <com.si.simembers.Widget.EmptyTextView
+                        android:id="@+id/tvHomeBestsellingPrice"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="7dp"
+                        android:textColor="#212121"
+                        android:textSize="13dp" />
+
+                </LinearLayout>
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/btHomeBestSelling"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="?attr/selectableItemBackgroundBorderless"/>
+
+        </FrameLayout>
+
+    </LinearLayout>
+
+</layout>

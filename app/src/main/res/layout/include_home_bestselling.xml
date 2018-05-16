@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="15dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginTop="23dp"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/tabs_home_bestselling_title"
+                    android:textColor="#212121"
+                    android:textSize="20dp"
+                    android:typeface="serif" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="#222222" />
+
+            </LinearLayout>
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <FrameLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="15dp">
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:background="#e5e5e5" />
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:layout_gravity="bottom"
+                            android:background="#e5e5e5" />
+
+                        <android.support.design.widget.TabLayout
+                            android:id="@+id/tabHomeBestsellingItems"
+                            android:layout_width="match_parent"
+                            android:layout_height="38dp"
+                            app:tabGravity="fill"
+                            app:tabIndicatorColor="#222222"
+                            app:tabIndicatorHeight="3dip"
+                            app:tabMaxWidth="0dp"
+                            app:tabMode="fixed"
+                            app:tabPaddingEnd="0dp"
+                            app:tabPaddingStart="0dp"
+                            app:tabSelectedTextColor="#212121"
+                            app:tabTextAppearance="@style/TabLayout.HomeBestSellingText"
+                            app:tabTextColor="#212121"></android.support.design.widget.TabLayout>
+                    </FrameLayout>
+
+
+                    <com.si.simembers.Widget.ResizingViewPager
+                        android:id="@+id/nvpHomeBestSelling"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+                    </com.si.simembers.Widget.ResizingViewPager>
+                </LinearLayout>
+            </FrameLayout>
+
+            <include
+                android:id="@+id/footer"
+                layout="@layout/footer_arrow_more" />
+
+        </LinearLayout>
+
+    </FrameLayout>
+</layout>
